@@ -50,6 +50,10 @@ app.get('/about', (req, res) => {
     });
 });
 
+app.get('/profile', (req, res) => {
+    res.render('profile.hbs');
+})
+
 app.listen(port, () => {
     console.log('Server listening at port 3000');
 });
